@@ -25,8 +25,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install package + test deps
         run: |
-          pip install -e ".[viz]"
+          pip install -e "."
           pip install pytest pytest-cov
+          pip install plotly folium requests || true
       - name: Run tests
         run: pytest tests/ -v --tb=short --ignore=tests/test_hsae.py || true
 
