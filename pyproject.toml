@@ -1,18 +1,18 @@
 [build-system]
-requires      = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+requires      = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name            = "hydrosovereign"
 version         = "6.5.0"
-description     = "HydroSovereign AI Engine — Python package for hydrological analysis, real satellite data ingestion, and water sovereignty assessment"
+description     = "HydroSovereign AI Engine — Python package for hydrological analysis, satellite data, and water sovereignty assessment"
 readme          = "README.md"
 license         = { text = "GPL-3.0" }
 requires-python = ">=3.9"
 authors         = [
     { name = "Seifeldin M.G. Alkedir", email = "saifeldinkhedir@gmail.com" }
 ]
-keywords        = ["hydrology", "GEE", "satellite", "water", "HSAE", "reservoir", "precipitation"]
+keywords        = ["hydrology", "GEE", "satellite", "water", "HSAE", "reservoir"]
 classifiers     = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
@@ -23,19 +23,17 @@ classifiers     = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Hydrology",
-    "Topic :: Scientific/Engineering :: GIS",
 ]
 dependencies    = [
     "numpy>=1.24",
     "pandas>=2.0",
     "scipy>=1.10",
     "requests>=2.31",
-    "matplotlib>=3.7",
 ]
 
 [project.optional-dependencies]
 gee     = ["earthengine-api>=0.1.400"]
-viz     = ["plotly>=5.18", "folium>=0.16"]
+viz     = ["plotly>=5.18", "folium>=0.16", "matplotlib>=3.7"]
 server  = ["fastapi>=0.110", "uvicorn>=0.27"]
 alerts  = ["python-telegram-bot>=20.0"]
 all     = ["hydrosovereign[gee,viz,server,alerts]"]
@@ -46,13 +44,10 @@ hsae           = "hydrosovereign.cli:main"
 
 [project.urls]
 Homepage      = "https://github.com/saifeldinkhedir-coder/hydrosovereign"
-Repository    = "https://github.com/saifeldinkhedir-coder/hydrosovereign"
-Documentation = "https://github.com/saifeldinkhedir-coder/hydrosovereign#readme"
-"Bug Tracker" = "https://github.com/saifeldinkhedir-coder/hydrosovereign/issues"
 DOI           = "https://doi.org/10.5281/zenodo.19180160"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where   = ["."]
 include = ["hydrosovereign*"]
 
 [tool.setuptools.package-data]
