@@ -129,7 +129,9 @@ from hydrosovereign.indices import (
 
 # Alkedir Transparency Deficit Index
 atdi = compute_atdi(runoff_c=0.38, cap_bcm=74.0, n_countries=3, dispute_level=4)
-# → 53.5%  (GERD: high transparency deficit, active dispute)
+hifd = compute_hifd(runoff_c=0.38, cap_bcm=74.0, n_countries=3, dispute_level=4)
+# ATDI → 53.5%  (GERD: high transparency deficit, active dispute)
+# HIFD → 35.7%  (GERD: significant human-induced flow deficit)
 
 # Nash-Sutcliffe Efficiency & Kling-Gupta Efficiency
 import numpy as np
@@ -141,6 +143,7 @@ print(f"KGE = {compute_kge(obs, sim):.4f}")  # → 0.9451
 # All indices at once
 all_idx = compute_all_indices(0.38, 74.0, 3, 4)
 # Returns: atdi, hifd, wqi, ci, negotiation, nse, kge
+# atdi=53.5%, hifd=35.7%, wqi=50.2%  (GERD example)
 ```
 
 ### 2. HBV-96 Rainfall-Runoff Model
@@ -252,26 +255,28 @@ hydrosovereign analyze "Blue Nile (GERD)" --json
 
 ## The 26 Registered Basins
 
-| Region | Basin | Dam | Capacity (BCM) | Countries | ATDI |
-|---|---|---|---|---|---|
-| **Africa** | Blue Nile | GERD | 74.0 | 3 | 53.5% |
-| **Africa** | Nile | Aswan High Dam | 162.0 | 2 | 42.1% |
-| **Africa** | Zambezi | Kariba | 180.6 | 2 | 38.4% |
-| **Africa** | Congo | Inga | 2.0 | 8 | 61.2% |
-| **Africa** | Niger | Kainji | 15.0 | 9 | 58.7% |
-| **Middle East** | Euphrates | Atatürk | 48.7 | 3 | 45.3% |
-| **Middle East** | Tigris | Mosul | 11.1 | 2 | 41.8% |
-| **Central Asia** | Vakhsh | Nurek | 10.5 | 5 | 56.2% |
-| **South Asia** | Indus | Tarbela | 13.7 | 2 | 39.6% |
-| **South Asia** | Brahmaputra | Subansiri | 2.4 | 3 | 44.1% |
-| **SE Asia** | Mekong | Xayaburi | 7.4 | 6 | 62.3% |
-| **East Asia** | Yangtze | Three Gorges | 39.3 | 1 | 28.4% |
-| **Europe** | Danube | Iron Gates | 2.4 | 10 | 35.7% |
-| **Europe** | Rhine | Various | 0.5 | 9 | 29.1% |
-| **Americas** | Amazon | Belo Monte | 250.0 | 8 | 49.8% |
-| **Americas** | Paraná | Itaipu | 29.0 | 2 | 31.2% |
-| **Americas** | Colorado | Hoover | 36.7 | 2 | 33.6% |
-| *… and 9 more* | | | | | |
+ATDI and HIFD computed using `compute_atdi()` and `compute_hifd()` from the calibrated index engine (ATDI RMSE = 4.1%, HIFD RMSE = 1.8%).
+
+| Region | Basin | Dam | Capacity (BCM) | Countries | ATDI | HIFD |
+|---|---|---|---|---|---|---|
+| **Africa** | Blue Nile | GERD | 74.0 | 3 | 53.5% | 35.7% |
+| **Africa** | Nile | Aswan High Dam | 162.0 | 2 | 33.1% | 32.2% |
+| **Africa** | Zambezi | Kariba | 180.6 | 2 | 31.1% | 29.2% |
+| **Africa** | Congo | Inga | 2.0 | 8 | 49.1% | 28.5% |
+| **Africa** | Niger | Kainji | 15.0 | 9 | 52.4% | 37.2% |
+| **Middle East** | Euphrates | Atatürk | 48.7 | 3 | 44.5% | 34.9% |
+| **Middle East** | Tigris | Mosul | 11.1 | 2 | 32.5% | 29.1% |
+| **Central Asia** | Vakhsh | Nurek | 10.5 | 5 | 56.8% | 35.5% |
+| **South Asia** | Indus | Tarbela | 13.7 | 2 | 30.5% | 26.7% |
+| **South Asia** | Brahmaputra | Subansiri | 2.4 | 3 | 29.1% | 18.6% |
+| **SE Asia** | Mekong | Xayaburi | 7.4 | 6 | 56.5% | 32.7% |
+| **East Asia** | Yangtze | Three Gorges | 39.3 | 1 | 18.4% | 22.8% |
+| **Europe** | Danube | Iron Gates | 2.4 | 10 | 40.0% | 25.4% |
+| **Europe** | Rhine | Various | 0.5 | 9 | 27.1% | 18.6% |
+| **Americas** | Amazon | Belo Monte | 250.0 | 8 | 47.0% | 31.9% |
+| **Americas** | Paraná | Itaipu | 29.0 | 2 | 17.5% | 21.4% |
+| **Americas** | Colorado | Hoover | 36.7 | 2 | 33.4% | 32.5% |
+| *… and 9 more* | | | | | | |
 
 ---
 
