@@ -26,7 +26,7 @@
 | 📦 **GitHub (Main App)** | [HydroSovereign-AI-Engine-HSAE-v601](https://github.com/saifeldinkhedir-coder/HydroSovereign-AI-Engine-HSAE-v601) |
 | 🏛️ **Zenodo DOI** | [10.5281/zenodo.19180160](https://doi.org/10.5281/zenodo.19180160) |
 | 📄 **SoftwareX Paper** | SOFTX-D-26-00442 — Under Review 2026 |
-| 📖 **Manual PDF** | [⬇️ Download Complete Guide](https://github.com/saifeldinkhedir-coder/HydroSovereign-AI-Engine-HSAE-v601/raw/main/hsae_qgis/HSAE_v601_QGIS_Plugin_Manual_v5.pdf) |
+| 📖 **Manual PDF** | [⬇️ Download Complete Guide](https://github.com/saifeldinkhedir-coder/HydroSovereign-AI-Engine-HSAE-v601/raw/main/hsae_qgis/HSAE_v601_QGIS_Plugin_Manual_v6.docx) |
 | 🐛 **Issues** | [GitHub Issues](https://github.com/saifeldinkhedir-coder/HydroSovereign-AI-Engine-HSAE-v601/issues) |
 
 ---
