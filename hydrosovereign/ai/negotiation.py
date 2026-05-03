@@ -22,7 +22,7 @@ class NegotiationAI:
         Parameters
         ----------
         atdi : float
-            Alkedir Transparency Deficit Index (0-100).
+            Alkhedir Transparency Deficit Index (0-100).
         hifd : float
             Hydrological Instability Factor Delta (0-100).
         n_countries : int
