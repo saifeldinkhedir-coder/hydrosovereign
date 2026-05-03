@@ -10,7 +10,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0821--2991-a6ce39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0821-2991)
 
-**Author:** Seifeldin M.G. Alkedir · [ORCID 0000-0003-0821-2991](https://orcid.org/0000-0003-0821-2991) · University of Khartoum
+**Author:** Seifeldin M.G. Alkhedir · [ORCID 0000-0003-0821-2991](https://orcid.org/0000-0003-0821-2991) · University of Khartoum
 
 </div>
 
@@ -39,7 +39,7 @@ Two novel scientific indices:
 
 | Index | Full Name | Range | Blue Nile Result |
 |-------|-----------|-------|------------------|
-| **ATDI** | Alkedir Transparency Deficit Index | 0–100% | **43.5%** — Art. 7 UNWC zone |
+| **ATDI** | Alkhedir Transparency Deficit Index | 0–100% | **43.5%** — Art. 7 UNWC zone |
 | **HIFD** | Human-Induced Flow Deficit | 0–100% | **20.0%** — 20% withheld |
 
 ---
@@ -114,7 +114,7 @@ hydrosovereign/
 
 ```bibtex
 @software{alkedir2026hsae,
-  author    = {Alkedir, Seifeldin M.G.},
+  author    = {Alkhedir, Seifeldin M.G.},
   title     = {{HydroSovereign AI Engine (HSAE) v6.01}},
   year      = {2026},
   publisher = {QGIS Plugin Repository + PyPI + Zenodo},
@@ -128,4 +128,4 @@ hydrosovereign/
 
 ---
 
-*hydrosovereign v6.5.3 · GPL-3.0 · Seifeldin M.G. Alkedir · ORCID: 0000-0003-0821-2991*
+*hydrosovereign v6.5.3 · GPL-3.0 · Seifeldin M.G. Alkhedir · ORCID: 0000-0003-0821-2991*
