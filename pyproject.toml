@@ -10,7 +10,7 @@ readme          = "README.md"
 license         = { text = "GPL-3.0" }
 requires-python = ">=3.9"
 authors         = [
-    { name = "Seifeldin M.G. Alkedir", email = "saifeldinkhedir@gmail.com" }
+    { name = "Seifeldin M.G. Alkhedir", email = "saifeldinkhedir@gmail.com" }
 ]
 keywords        = ["hydrology", "GEE", "satellite", "water", "HSAE", "reservoir"]
 classifiers     = [
