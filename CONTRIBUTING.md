@@ -42,4 +42,4 @@ data source and methodology.
 ## Questions
 
 Open an issue or contact:
-**Seifeldin M.G. Alkedir** · saifeldinkhedir@gmail.com · ORCID: 0000-0003-0821-2991
+**Seifeldin M.G. Alkhedir** · saifeldinkhedir@gmail.com · ORCID: 0000-0003-0821-2991
