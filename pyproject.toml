@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "hydrosovereign"
-version         = "6.5.3"
+version         = "6.5.4"
 description     = "HydroSovereign AI Engine — Python package for hydrological analysis, satellite data, and water sovereignty assessment"
 readme          = "README.md"
 license         = { text = "GPL-3.0" }
