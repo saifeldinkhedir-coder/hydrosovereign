@@ -15,7 +15,7 @@
 
 **HSAE automates the full pipeline from live satellite observation to international water law compliance — in under 2 minutes per basin.**
 
-> 362+ downloads · 20 countries · 5 continents · 100% QGIS security scan · GeoAgent AI · eWaterCycle BMI
+> 440+ downloads · 20 countries · 5 continents · 100% QGIS security scan · GeoAgent AI · eWaterCycle BMI
 
 </div>
 
@@ -256,7 +256,7 @@ hsae compliance --basin "Euphrates" --article 7
   publisher = {PyPI + QGIS Plugin Repository + Zenodo},
   version   = {6.5.6},
   note      = {QGIS Plugin ID: 5040. SoftwareX under review: SOFTX-D-26-00442.
-               Preprint: SSRN 6661396. 362+ downloads, 20 countries.},
+               Preprint: SSRN 6661396. 440+ downloads, 20 countries.},
   url       = {https://pypi.org/project/hydrosovereign/},
   doi       = {10.5281/zenodo.19180160},
   orcid     = {0000-0003-0821-2991}
