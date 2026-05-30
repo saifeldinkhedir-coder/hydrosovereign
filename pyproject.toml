@@ -4,25 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hydrosovereign"
-version = "6.5.6"
+version = "6.6.0"
 description = "HydroSovereign AI Engine (HSAE) — Automated satellite-driven transboundary water law compliance for 26 globally contested river basins"
 readme = "README.md"
 license = {text = "GPL-3.0"}
 requires-python = ">=3.9"
-authors = [
-    {name = "Seifeldin M.G. Alkhedir", email = "saifeldinkhedir@gmail.com"}
-]
-maintainers = [
-    {name = "Seifeldin M.G. Alkhedir", email = "saifeldinkhedir@gmail.com"}
-]
+authors = [{name = "Seifeldin M.G. Alkhedir", email = "saifeldinkhedir@gmail.com"}]
+maintainers = [{name = "Seifeldin M.G. Alkhedir", email = "saifeldinkhedir@gmail.com"}]
 keywords = [
-    "hydrology", "water-law", "transboundary", "UNWC", "satellite",
-    "remote-sensing", "GEE", "Google-Earth-Engine", "HBV96", "SCE-UA",
-    "ATDI", "AHIFD", "AFSF", "AHLB", "ASI", "ATCI", "AWSI",
-    "eWaterCycle", "BMI", "GeoAgent", "water-sovereignty",
-    "water-diplomacy", "GERD", "Blue-Nile", "Mekong", "Euphrates",
-    "QGIS", "water-resources", "rainfall-runoff", "NSE", "KGE",
-    "ICJ", "PCA", "water-conflict", "river-basin", "dam"
+    "hydrology","water-law","transboundary","UNWC","satellite",
+    "remote-sensing","GEE","Google-Earth-Engine","HBV96","SCE-UA",
+    "ATDI","AHIFD","AFSF","AHLB","ASI","ATCI","AWSI",
+    "eWaterCycle","BMI","GeoAgent","water-sovereignty",
+    "water-diplomacy","GERD","Blue-Nile","Mekong","Euphrates",
+    "QGIS","water-resources","rainfall-runoff","NSE","KGE",
+    "ICJ","PCA","water-conflict","river-basin","dam","Bayesian"
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -54,11 +50,10 @@ dependencies = [
 
 [project.optional-dependencies]
 gee     = ["earthengine-api>=0.1.400"]
-viz     = ["plotly>=5.18", "folium>=0.16", "matplotlib>=3.7"]
-server  = ["fastapi>=0.110", "uvicorn>=0.27"]
-alerts  = ["python-telegram-bot>=20.0"]
-jupyter = ["jupyter>=1.0", "ipykernel>=6.0", "ipywidgets>=8.0"]
-full    = ["hydrosovereign[gee,viz,server,alerts,jupyter]"]
+viz     = ["plotly>=5.18","folium>=0.16","matplotlib>=3.7"]
+server  = ["fastapi>=0.110","uvicorn>=0.27"]
+jupyter = ["jupyter>=1.0","ipykernel>=6.0","ipywidgets>=8.0"]
+full    = ["hydrosovereign[gee,viz,server,jupyter]"]
 
 [project.scripts]
 hydrosovereign = "hydrosovereign.cli:main"
@@ -80,8 +75,8 @@ where   = ["."]
 include = ["hydrosovereign*"]
 
 [tool.setuptools.package-data]
-"hydrosovereign.data" = ["*.json", "*.csv"]
-"hydrosovereign"      = ["py.typed"]
+"hydrosovereign"      = ["py.typed","*.json","*.csv"]
+"hydrosovereign.data" = ["*.json","*.csv"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
